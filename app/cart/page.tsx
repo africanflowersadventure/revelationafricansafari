@@ -220,10 +220,20 @@ export default function CartPage() {
   };
 
   /* ============================================================
-     GET QUOTE — opens user's email app, no API required
+     GET QUOTE — opens email app + GA4 event
      ============================================================ */
   const getQuote = (): void => {
     if (!validateForm()) return;
+
+    // GA4 event
+    if (typeof window !== "undefined" && (window as any).gtag) {
+      (window as any).gtag("event", "generate_quote", {
+        event_category: "engagement",
+        event_label: "Cart Quote Request",
+        value: total,
+        currency: "USD",
+      });
+    }
 
     const subject = encodeURIComponent(
       `Quote Request — ${form.name} (${items.length} package${
@@ -250,9 +260,7 @@ export default function CartPage() {
       lines.push(
         `   Duration:     ${item.durationDays} Days / ${item.durationNights} Nights`
       );
-      lines.push(
-        `   Destinations: ${item.destinations.join(" → ")}`
-      );
+      lines.push(`   Destinations: ${item.destinations.join(" → ")}`);
       lines.push(`   Travelers:    ${item.travelers}`);
       lines.push(`   Start Date:   ${item.startDate || "TBD"}`);
       lines.push(
@@ -276,7 +284,7 @@ export default function CartPage() {
     toast.success("Opening your email app — just press Send!");
   };
 
-  /* ---------- PDF DOWNLOAD ---------- */
+  /* ---------- PDF DOWNLOAD + GA4 event ---------- */
   const downloadPDF = async (): Promise<void> => {
     if (items.length === 0) {
       toast.error("Your cart is empty.");
@@ -292,6 +300,17 @@ export default function CartPage() {
         phone: `${form.countryCode} ${form.phone}`,
         startDate: form.startDate || undefined,
       });
+
+      // GA4 event
+      if (typeof window !== "undefined" && (window as any).gtag) {
+        (window as any).gtag("event", "download_itinerary", {
+          event_category: "engagement",
+          event_label: "PDF Itinerary",
+          value: total,
+          currency: "USD",
+        });
+      }
+
       toast.success("PDF downloaded!");
     } catch (err) {
       console.error(err);

@@ -3,6 +3,7 @@ import localFont from "next/font/local";
 import Navbar from "@/app/components/Navbar";
 import Footer from "@/app/components/Footer";
 import FloatingCTA from "@/app/components/FloatingCTA";
+import CookieBanner from "@/app/components/CookieBanner";
 import { Toaster } from "react-hot-toast";
 import { CartProvider } from "@/app/context/CartContext";
 import type { Metadata } from "next";
@@ -37,7 +38,11 @@ export const metadata: Metadata = {
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" className={`${urbanist.variable} light`} style={{ colorScheme: "light" }}>
+    <html
+      lang="en"
+      className={`${urbanist.variable} light`}
+      style={{ colorScheme: "light" }}
+    >
       <body className="min-h-screen flex flex-col bg-white text-black">
         <CartProvider>
           <Navbar />
@@ -60,6 +65,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             error: { iconTheme: { primary: "#F97316", secondary: "#ffffff" } },
           }}
         />
+        <CookieBanner />
       </body>
     </html>
   );
