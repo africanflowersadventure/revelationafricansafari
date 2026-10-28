@@ -15,21 +15,6 @@ const nextConfig: NextConfig = {
     ],
   },
 
-  async redirects() {
-    return [
-      {
-        source: "/:path*",
-        has: [
-          {
-            type: "host",
-            value: "www.revelationafricansafari.com",
-          },
-        ],
-        destination: "https://revelationafricansafari.com/:path*",
-        permanent: true,
-      },
-    ];
-  },
 };
 
 export default nextConfig;
