@@ -4,26 +4,51 @@
 
   <!-- Homepage -->
   <url>
-    <loc>https://www.revelationafricansafari.com/</loc>
+    <loc>https://revelationafricansafari.com/</loc>
   </url>
 
   <!-- Main pages -->
   <url>
-    <loc>https://www.revelationafricansafari.com/about-us/</loc>
+    <loc>https://revelationafricansafari.com/about/</loc>
   </url>
   <url>
-    <loc>https://www.revelationafricansafari.com/contact-us/</loc>
+    <loc>https://revelationafricansafari.com/contact/</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/tours/</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/cart/</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/privacy/</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/terms/</loc>
+  </url>
+
+  <!-- Kilimanjaro -->
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/</loc>
+  </url>
+
+  <!-- Zanzibar -->
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/</loc>
   </url>
 
   <!-- Safari destinations -->
   <url>
-    <loc>https://www.revelationafricansafari.com/serengeti-national-park/</loc>
+    <loc>https://revelationafricansafari.com/serengeti-national-park/</loc>
   </url>
   <url>
-    <loc>https://www.revelationafricansafari.com/ngorongoro-crater/</loc>
+    <loc>https://revelationafricansafari.com/ngorongoro-crater/</loc>
   </url>
   <url>
-    <loc>https://www.revelationafricansafari.com/tarangire-national-park/</loc>
+    <loc>https://revelationafricansafari.com/tarangire-national-park/</loc>
   </url>
 
 </urlset>
