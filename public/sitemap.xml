@@ -9,46 +9,110 @@
 
   <!-- Main pages -->
   <url>
-    <loc>https://revelationafricansafari.com/about/</loc>
+    <loc>https://revelationafricansafari.com/about</loc>
   </url>
   <url>
-    <loc>https://revelationafricansafari.com/contact/</loc>
+    <loc>https://revelationafricansafari.com/tours</loc>
   </url>
   <url>
-    <loc>https://revelationafricansafari.com/tours/</loc>
-  </url>
-  <url>
-    <loc>https://revelationafricansafari.com/cart/</loc>
-  </url>
-  <url>
-    <loc>https://revelationafricansafari.com/privacy/</loc>
-  </url>
-  <url>
-    <loc>https://revelationafricansafari.com/terms/</loc>
+    <loc>https://revelationafricansafari.com/contact</loc>
   </url>
 
-  <!-- Kilimanjaro -->
+  <!-- Safari styles -->
   <url>
-    <loc>https://revelationafricansafari.com/kilimanjaro/</loc>
+    <loc>https://revelationafricansafari.com/safaris/style/day-trips</loc>
   </url>
   <url>
-    <loc>https://revelationafricansafari.com/kilimanjaro/routes/</loc>
+    <loc>https://revelationafricansafari.com/safaris/style/private</loc>
   </url>
-
-  <!-- Zanzibar -->
   <url>
-    <loc>https://revelationafricansafari.com/zanzibar/</loc>
+    <loc>https://revelationafricansafari.com/safaris/style/migration</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/safaris/style/family</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/safaris/style/honeymoon</loc>
   </url>
 
   <!-- Safari destinations -->
   <url>
-    <loc>https://revelationafricansafari.com/serengeti-national-park/</loc>
+    <loc>https://revelationafricansafari.com/destinations/serengeti</loc>
   </url>
   <url>
-    <loc>https://revelationafricansafari.com/ngorongoro-crater/</loc>
+    <loc>https://revelationafricansafari.com/destinations/ngorongoro</loc>
   </url>
   <url>
-    <loc>https://revelationafricansafari.com/tarangire-national-park/</loc>
+    <loc>https://revelationafricansafari.com/destinations/tarangire</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/destinations/manyara</loc>
+  </url>
+
+  <!-- Mount Kilimanjaro -->
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/machame-route-7-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/marangu-route-6-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/machame-route-6-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/lemosho-route-8-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/rongai-route-7-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/umbwe-route-6-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/kilimanjaro/routes/northern-circuit-9-days</loc>
+  </url>
+
+  <!-- Zanzibar holidays -->
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/holidays/zanzibar-beach-holiday-4-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/holidays/stone-town-escape-3-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/holidays/zanzibar-culture-beach-5-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/holidays/zanzibar-honeymoon-6-days</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/holidays/zanzibar-island-discovery-7-days</loc>
+  </url>
+
+  <!-- Zanzibar excursions -->
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/stone-town-tour</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/spice-farm-tour</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/prison-island</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/mnemba-snorkelling</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/sunset-dhow-cruise</loc>
+  </url>
+  <url>
+    <loc>https://revelationafricansafari.com/zanzibar/excursions/jozani-forest</loc>
   </url>
 
 </urlset>
