@@ -1,0 +1,44 @@
+
+# Revelation Africa Safari
+
+> Revelation Africa Safari helps travelers explore Tanzania through safari adventures, wildlife destinations, Mount Kilimanjaro climbs, and Zanzibar holidays.
+
+## Main Website
+
+- [Home](https://revelationafricansafari.com/): Overview of Revelation Africa Safari and its travel experiences.
+- [About Us](https://revelationafricansafari.com/about): Learn about the company.
+- [Safari Tours](https://revelationafricansafari.com/tours): Explore available safari tours and packages.
+- [Contact](https://revelationafricansafari.com/contact): Contact the company for inquiries and trip planning.
+
+## Safari Experiences
+
+- [Day Trips](https://revelationafricansafari.com/safaris/style/day-trips): Safari day-trip options.
+- [Private Safaris](https://revelationafricansafari.com/safaris/style/private): Private safari experiences.
+- [Migration Safaris](https://revelationafricansafari.com/safaris/style/migration): Safaris focused on wildlife migration.
+- [Family Safaris](https://revelationafricansafari.com/safaris/style/family): Safari options for families.
+- [Honeymoon Safaris](https://revelationafricansafari.com/safaris/style/honeymoon): Safari experiences for couples.
+
+## Tanzania Destinations
+
+- [Serengeti National Park](https://revelationafricansafari.com/destinations/serengeti): Wildlife viewing and safari experiences.
+- [Ngorongoro](https://revelationafricansafari.com/destinations/ngorongoro): Explore the Ngorongoro area.
+- [Tarangire](https://revelationafricansafari.com/destinations/tarangire): Discover Tarangire safari experiences.
+- [Lake Manyara](https://revelationafricansafari.com/destinations/manyara): Explore Lake Manyara destination experiences.
+
+## Mount Kilimanjaro
+
+- [Kilimanjaro Climbing](https://revelationafricansafari.com/kilimanjaro): Information about climbing Mount Kilimanjaro.
+- [Kilimanjaro Routes](https://revelationafricansafari.com/kilimanjaro/routes): Explore available climbing routes.
+
+## Zanzibar
+
+- [Zanzibar Holidays](https://revelationafricansafari.com/zanzibar): Discover Zanzibar holidays and island experiences.
+- [Zanzibar Tours](https://revelationafricansafari.com/zanzibar/tours): Explore Zanzibar tours and activities.
+
+## Sitemap
+
+- [XML Sitemap](https://revelationafricansafari.com/sitemap.xml): Discover the website's listed URLs.
+
+## Important Information
+
+Use the website's individual pages as the authoritative source for current tour details, itineraries, availability, prices, and booking conditions.
