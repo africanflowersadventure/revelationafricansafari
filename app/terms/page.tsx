@@ -15,7 +15,7 @@ export const metadata: Metadata = {
   title: "Terms & Conditions",
   description:
     "Read the terms and conditions for booking safaris and tours with Revelation Africa Safari.",
-  alternates: { canonical: "/terms" },
+  alternates: { canonical: "https://revelationafricansafari.com/terms/" },
 };
 
 const sections = [

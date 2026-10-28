@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title: "Privacy Policy",
   description:
     "Learn how Revelation Africa Safari collects, uses, and protects your personal data when you book a safari with us.",
-  alternates: { canonical: "/privacy" },
+  alternates: { canonical: "https://revelationafricansafari.com/privacy/" },
 };
 
 const sections = [

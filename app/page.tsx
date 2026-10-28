@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { 
@@ -12,6 +13,28 @@ import {
 } from "lucide-react";
 import { safaris } from "@/data/safaris";
 import SafariCard from "./components/SafariCard";
+
+export const metadata: Metadata = {
+  title: "Tanzania Safaris, Kilimanjaro & Zanzibar | Revelation Africa Safari",
+  description: "Tailor-made Tanzania safaris, Kilimanjaro climbs, and Zanzibar escapes. Locally owned safari company in Arusha offering private & group tours.",
+  keywords: [
+    "Tanzania safaris",
+    "Serengeti safari",
+    "Ngorongoro crater tour",
+    "Kilimanjaro climb",
+    "Zanzibar beach holiday",
+    "Tanzania tour operator",
+    "Arusha safari",
+    "African safari packages",
+  ],
+  alternates: { canonical: "https://revelationafricansafari.com/" },
+  openGraph: {
+    title: "Revelation Africa Safari | Tanzania Safaris, Kilimanjaro & Zanzibar",
+    description: "Tailor-made safaris, Kilimanjaro climbs, and Zanzibar escapes crafted by local experts.",
+    url: "https://revelationafricansafari.com/",
+    images: ["/revelationLogo.png"],
+  },
+};
 
 
 // --- Static Data for the Home Page ---

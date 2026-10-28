@@ -21,13 +21,18 @@ const urbanist = localFont({
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://www.revelationafricasafari.com"),
+  metadataBase: new URL("https://revelationafricansafari.com"),
   title: {
     default: "Revelation Africa Safari | Tanzania Safaris, Kilimanjaro & Zanzibar",
     template: "%s | Revelation Africa Safari",
   },
   description:
     "Discover the heart of Africa — safaris, Kilimanjaro climbs, and Zanzibar escapes.",
+  icons: {
+    icon: "/revelationLogo.png",
+    shortcut: "/revelationLogo.png",
+    apple: "/revelationLogo.png",
+  },
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {

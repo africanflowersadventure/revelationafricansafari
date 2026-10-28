@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "Contact Revelation Africa Safari",
     description:
       "Call, email, or message us to plan your dream Tanzania safari, Kilimanjaro climb, or Zanzibar escape.",
-    url: "/contact",
+    url: "https://revelationafricansafari.com/contact",
     images: ["/revelationLogo.png"],
   },
 };

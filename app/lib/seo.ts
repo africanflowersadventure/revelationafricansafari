@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-const BASE_URL = "https://www.revelationafricasafari.com";
+const BASE_URL = "https://revelationafricansafari.com";
 const SITE_NAME = "Revelation Africa Safari";
 const DEFAULT_OG_IMAGE = "/revelationLogo.png";
 

@@ -16,7 +16,7 @@ export const metadata: Metadata = {
     title: "About Revelation Africa Safari",
     description:
       "A locally-owned Tanzanian safari company with a passion for sharing East Africa's beauty.",
-    url: "/about",
+    url: "https://revelationafricansafari.com/about",
     images: ["/revelationLogo.png"],
   },
 };
