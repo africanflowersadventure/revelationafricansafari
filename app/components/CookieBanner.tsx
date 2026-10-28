@@ -10,20 +10,33 @@ export default function CookieBanner() {
   const [isClient, setIsClient] = useState(false);
   const [show, setShow] = useState(false);
 
+  // Read GA ID from .env.local (must start with NEXT_PUBLIC_)
   const GA_ID = process.env.NEXT_PUBLIC_GA_MEASUREMENT_ID;
 
   useEffect(() => {
     setIsClient(true);
+
+    // Warn once in dev if the env var is missing or malformed
+    if (
+      process.env.NODE_ENV !== "production" &&
+      (!GA_ID || !/^G-[A-Z0-9]+$/i.test(GA_ID))
+    ) {
+      console.warn(
+        "[CookieBanner] NEXT_PUBLIC_GA_MEASUREMENT_ID is missing or invalid. " +
+          "Expected format: G-XXXXXXXXXX. Current value:",
+        GA_ID
+      );
+    }
+
     const stored = localStorage.getItem("cookie-consent");
     if (stored === "accepted" || stored === "declined") {
       setConsent(stored as "accepted" | "declined");
       setShow(false);
     } else {
-      // No prior choice → show the popup after a short delay
       const t = setTimeout(() => setShow(true), 800);
       return () => clearTimeout(t);
     }
-  }, []);
+  }, [GA_ID]);
 
   const handleAccept = () => {
     localStorage.setItem("cookie-consent", "accepted");
@@ -40,8 +53,8 @@ export default function CookieBanner() {
 
   if (!isClient) return null;
 
-  // Load GA only if accepted
-  if (consent === "accepted" && GA_ID) {
+  // Load GA only if consent === "accepted" AND a valid GA_ID is present
+  if (consent === "accepted" && GA_ID && /^G-[A-Z0-9]+$/i.test(GA_ID)) {
     return (
       <>
         <Script
@@ -66,7 +79,6 @@ export default function CookieBanner() {
   return (
     <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-black/40 backdrop-blur-sm">
       <div className="bg-white rounded-2xl shadow-2xl max-w-md w-full p-6 relative">
-        {/* Close button top-right */}
         <button
           onClick={handleDecline}
           className="absolute top-4 right-4 text-gray-400 hover:text-gray-600 transition"
@@ -75,17 +87,14 @@ export default function CookieBanner() {
           <X size={18} />
         </button>
 
-        {/* Icon */}
         <div className="w-12 h-12 rounded-full bg-brand-orange/10 flex items-center justify-center mb-4">
           <Cookie className="text-brand-orange" size={24} />
         </div>
 
-        {/* Heading */}
         <h3 className="text-lg font-bold text-black mb-2">
           We value your privacy
         </h3>
 
-        {/* Body */}
         <p className="text-sm text-gray-600 mb-6 leading-relaxed">
           We use cookies to analyze traffic and improve your experience. Read
           our{" "}
@@ -98,7 +107,6 @@ export default function CookieBanner() {
           to learn more. You can accept or decline analytics cookies.
         </p>
 
-        {/* Buttons */}
         <div className="flex gap-3">
           <button
             onClick={handleDecline}
@@ -114,7 +122,6 @@ export default function CookieBanner() {
           </button>
         </div>
 
-        {/* Small footer link */}
         <p className="text-xs text-gray-400 mt-4 text-center">
           You can change your mind anytime by clearing site data.
         </p>
