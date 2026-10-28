@@ -12,10 +12,11 @@ import { CartablePackage } from "@/data/types";
 // =======================
 // 1. Types
 // =======================
-interface CartItem extends CartablePackage {
+export type CartItem = CartablePackage & {
+  id: string;
   travelers: number;
   startDate: string;
-}
+};
 
 interface CartContextType {
   items: CartItem[];
@@ -50,9 +51,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
       if (saved) {
         const parsed = JSON.parse(saved);
         if (parsed.version === STORAGE_VERSION && Array.isArray(parsed.items)) {
-          setItems(parsed.items);
+          setItems(parsed.items as CartItem[]);
         } else {
-          // Data model changed → clear old cart
           localStorage.removeItem(STORAGE_KEY);
         }
       }
@@ -84,9 +84,11 @@ export function CartProvider({ children }: { children: ReactNode }) {
         try {
           const parsed = JSON.parse(e.newValue);
           if (parsed.version === STORAGE_VERSION && Array.isArray(parsed.items)) {
-            setItems(parsed.items);
+            setItems(parsed.items as CartItem[]);
           }
-        } catch {}
+        } catch {
+          /* ignore */
+        }
       }
     };
     window.addEventListener("storage", onStorage);
@@ -94,34 +96,42 @@ export function CartProvider({ children }: { children: ReactNode }) {
   }, []);
 
   // ---------- Actions ----------
-  const addToCart = (safari: CartablePackage) => {
-    setItems((prev) => {
+  const addToCart = (safari: CartablePackage): void => {
+    setItems((prev: CartItem[]) => {
       if (prev.find((item) => item.slug === safari.slug)) return prev;
-      return [...prev, { ...safari, travelers: 2, startDate: "" }];
+      return [
+        ...prev,
+        {
+          ...safari,
+          id: `${safari.slug}-${Date.now()}-${Math.floor(Math.random() * 999)}`,
+          travelers: 2,
+          startDate: "",
+        },
+      ];
     });
   };
 
-  const removeFromCart = (slug: string) => {
-    setItems((prev) => prev.filter((item) => item.slug !== slug));
+  const removeFromCart = (slug: string): void => {
+    setItems((prev: CartItem[]) => prev.filter((item) => item.slug !== slug));
   };
 
-  const updateTravelers = (slug: string, travelers: number) => {
-    setItems((prev) =>
+  const updateTravelers = (slug: string, travelers: number): void => {
+    setItems((prev: CartItem[]) =>
       prev.map((item) =>
         item.slug === slug ? { ...item, travelers } : item
       )
     );
   };
 
-  const updateStartDate = (slug: string, date: string) => {
-    setItems((prev) =>
+  const updateStartDate = (slug: string, date: string): void => {
+    setItems((prev: CartItem[]) =>
       prev.map((item) =>
         item.slug === slug ? { ...item, startDate: date } : item
       )
     );
   };
 
-  const clearCart = () => setItems([]);
+  const clearCart = (): void => setItems([]);
 
   const total = items.reduce(
     (sum, item) => sum + item.priceUSD * item.travelers,
