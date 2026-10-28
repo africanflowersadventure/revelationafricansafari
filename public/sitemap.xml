@@ -1,92 +1,29 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-<url>
-<loc/>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>1</priority>
-</url>
-<url>
-<loc>/about</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/contact</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/tours</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/safaris/popular</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/safaris/hot</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/safaris/private</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/safaris/shared</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/kilimanjaro/routes</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/zanzibar/tours</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/zanzibar/beaches</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/destinations/ngorongoro</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/destinations/serengeti</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/destinations/tarangire</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
-<url>
-<loc>/destinations/manyara</loc>
-<lastmod>2026-10-28T06:45:57.503Z</lastmod>
-<changefreq>weekly</changefreq>
-<priority>0.8</priority>
-</url>
+
+  <!-- Homepage -->
+  <url>
+    <loc>https://www.revelationafricansafari.com/</loc>
+  </url>
+
+  <!-- Main pages -->
+  <url>
+    <loc>https://www.revelationafricansafari.com/about-us/</loc>
+  </url>
+  <url>
+    <loc>https://www.revelationafricansafari.com/contact-us/</loc>
+  </url>
+
+  <!-- Safari destinations -->
+  <url>
+    <loc>https://www.revelationafricansafari.com/serengeti-national-park/</loc>
+  </url>
+  <url>
+    <loc>https://www.revelationafricansafari.com/ngorongoro-crater/</loc>
+  </url>
+  <url>
+    <loc>https://www.revelationafricansafari.com/tarangire-national-park/</loc>
+  </url>
+
 </urlset>
