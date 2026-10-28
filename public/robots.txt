@@ -1,5 +1,5 @@
-User-Agent: *
+User-agent: *
 Allow: /
 Disallow: /cart
 
-Sitemap: https://www.revelationafricasafari.com/sitemap.xml
+Sitemap: https://revelationafricansafari.com/sitemap.xml
