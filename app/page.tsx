@@ -82,14 +82,14 @@ export default function Home() {
 
           {/* Floating Search Card */}
           <div className="bg-white p-3 rounded-2xl shadow-2xl max-w-3xl mx-auto flex flex-col md:flex-row gap-2">
-            <select className="flex-1 p-3 border-none bg-gray-50 rounded-xl outline-none text-black font-medium cursor-pointer">
+            <select aria-label="Destination" className="flex-1 p-3 border-none bg-gray-50 rounded-xl outline-none text-black font-medium cursor-pointer">
               <option>All Destinations</option>
               <option>Serengeti</option>
               <option>Ngorongoro</option>
               <option>Zanzibar</option>
               <option>Kilimanjaro</option>
             </select>
-            <select className="flex-1 p-3 border-none bg-gray-50 rounded-xl outline-none text-black font-medium cursor-pointer">
+            <select aria-label="Trip type" className="flex-1 p-3 border-none bg-gray-50 rounded-xl outline-none text-black font-medium cursor-pointer">
               <option>Any Trip Type</option>
               <option>Private Safari</option>
               <option>Shared Safari</option>
@@ -204,21 +204,21 @@ export default function Home() {
               <li className="flex gap-3">
                 <div className="bg-brand-green-light text-brand-green p-2 rounded-lg h-fit"><MapPin size={20} /></div>
                 <div>
-                  <h4 className="font-bold">Local Expertise</h4>
+                  <h3 className="font-bold">Local Expertise</h3>
                   <p className="text-sm text-gray-600">Guides who know exactly where to find the wildlife.</p>
                 </div>
               </li>
               <li className="flex gap-3">
                 <div className="bg-brand-green-light text-brand-green p-2 rounded-lg h-fit"><Compass size={20} /></div>
                 <div>
-                  <h4 className="font-bold">Custom Itineraries</h4>
+                  <h3 className="font-bold">Custom Itineraries</h3>
                   <p className="text-sm text-gray-600">Every trip is built around your pace and preferences.</p>
                 </div>
               </li>
               <li className="flex gap-3">
                 <div className="bg-brand-green-light text-brand-green p-2 rounded-lg h-fit"><ShieldCheck size={20} /></div>
                 <div>
-                  <h4 className="font-bold">Responsible Travel</h4>
+                  <h3 className="font-bold">Responsible Travel</h3>
                   <p className="text-sm text-gray-600">We give back to the communities and parks we visit.</p>
                 </div>
               </li>

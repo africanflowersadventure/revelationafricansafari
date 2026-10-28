@@ -24,11 +24,47 @@ const urbanist = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL("https://revelationafricansafari.com"),
   title: {
-    default: "Revelation Africa Safari | Tanzania Safaris, Kilimanjaro & Zanzibar",
+    default: "Tanzania Safaris & Kilimanjaro Climbs | Revelation Africa",
     template: "%s | Revelation Africa Safari",
   },
   description:
-    "Discover the heart of Africa — safaris, Kilimanjaro climbs, and Zanzibar escapes.",
+    "Tanzania safari tour operator based in Arusha. Kilimanjaro climbs, Zanzibar holidays, and tailor-made safaris with local experts.",
+  keywords: [
+    "Tanzania safari",
+    "Kilimanjaro climb",
+    "Zanzibar holiday",
+    "Arusha safari company",
+    "Serengeti safari",
+    "Ngorongoro Crater safari",
+  ],
+  openGraph: {
+    type: "website",
+    locale: "en_US",
+    url: "https://revelationafricansafari.com",
+    siteName: "Revelation Africa Safari",
+    title: "Tanzania Safaris & Kilimanjaro Climbs | Revelation Africa",
+    description:
+      "Tanzania safari tour operator based in Arusha. Kilimanjaro climbs, Zanzibar holidays, and tailor-made safaris with local experts.",
+    images: [
+      {
+        url: "/revelationLogo.png",
+        width: 1200,
+        height: 630,
+        alt: "Revelation Africa Safari",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Tanzania Safaris & Kilimanjaro Climbs | Revelation Africa",
+    description:
+      "Tanzania safari tour operator based in Arusha. Kilimanjaro climbs, Zanzibar holidays, and tailor-made safaris with local experts.",
+    images: ["/revelationLogo.png"],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },

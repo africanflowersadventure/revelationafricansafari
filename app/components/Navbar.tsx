@@ -208,7 +208,8 @@ export default function Navbar() {
             {/* Safari Cart (Inaonyesha idadi halisi) */}
             <Link
               href="/cart"
-              className="relative flex items-center gap-1.5 bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold text-sm px-3 py-2 rounded-lg transition shadow whitespace-nowrap"
+              aria-label="Cart"
+"relative flex items-center gap-1.5 bg-brand-orange hover:bg-brand-orange-dark text-white font-semibold text-sm px-3 py-2 rounded-lg transition shadow whitespace-nowrap"
             >
               <ShoppingCart size={16} />
               <span className="hidden sm:inline">Cart</span>
