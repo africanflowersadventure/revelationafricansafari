@@ -30,10 +30,15 @@ export const metadata: Metadata = {
   description:
     "Discover the heart of Africa — safaris, Kilimanjaro climbs, and Zanzibar escapes.",
   icons: {
-    icon: "/revelationLogo.png",
-    shortcut: "/revelationLogo.png",
-    apple: "/revelationLogo.png",
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/android-chrome-192x192.png", sizes: "192x192", type: "image/png" },
+      { url: "/android-chrome-512x512.png", sizes: "512x512", type: "image/png" },
+    ],
+    shortcut: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
   },
+  manifest: "/site.webmanifest",
 };
 
 export default function RootLayout({ children }: { children: ReactNode }) {
